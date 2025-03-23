@@ -1,12 +1,13 @@
 [project]
 name = "mcp-server-calculator"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Model Context Protocol server for calculating"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [{ name = "He Jie", email = "hejie6173@gmail.com" }]
 keywords = ["mcp", "llm", "math", "calculator"]
 license = { text = "MIT" }
+urls = { Source = "https://github.com/githejie/mcp-server-calculator" }
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

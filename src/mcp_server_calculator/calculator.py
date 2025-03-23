@@ -24,7 +24,7 @@ def evaluate(expression: str) -> str:
                 return allowed_operators[type(node.op)](left, right)
         elif isinstance(node, ast.UnaryOp) and isinstance(node.op, ast.USub):
             return -eval_expr(node.operand)
-        raise ValueError("Unsupported operation")
+        raise ValueError(f"Unsupported operation: {ast.dump(node)}")
 
     parsed_expr = ast.parse(expression, mode='eval')
     result = eval_expr(parsed_expr.body)
