@@ -1,4 +1,5 @@
 # Calculator MCP Server
+[![smithery badge](https://smithery.ai/badge/@githejie/mcp-server-calculator)](https://smithery.ai/server/@githejie/mcp-server-calculator)
 
 A Model Context Protocol server for calculating. This server enables LLMs to use calculator for precise numerical calculations.
 
@@ -8,6 +9,14 @@ A Model Context Protocol server for calculating. This server enables LLMs to use
   - `expression` (string, required): Expression to be calculated
 
 ## Installation
+
+### Installing via Smithery
+
+To install Calculator MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@githejie/mcp-server-calculator):
+
+```bash
+npx -y @smithery/cli install @githejie/mcp-server-calculator --client claude
+```
 
 ### Using uv (recommended)
 
