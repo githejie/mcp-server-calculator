@@ -10,9 +10,11 @@ class TestCalculator(unittest.TestCase):
 
     def test_multiplication(self):
         self.assertEqual(evaluate("2 * 3"), "6")
+        self.assertEqual(evaluate("2 × 3"), "6")
 
     def test_division(self):
         self.assertEqual(evaluate("8 / 2"), "4.0")
+        self.assertEqual(evaluate("8 ÷ 2"), "4.0")
 
     def test_floor_division(self):
         self.assertEqual(evaluate("7 // 2"), "3")
@@ -22,6 +24,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_power(self):
         self.assertEqual(evaluate("2 ** 3"), "8")
+        self.assertEqual(evaluate("2 ^ 3"), "8")
 
     def test_unary_minus(self):
         self.assertEqual(evaluate("-5"), "-5")

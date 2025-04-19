@@ -26,6 +26,7 @@ def evaluate(expression: str) -> str:
             return -eval_expr(node.operand)
         raise ValueError(f"Unsupported operation: {ast.dump(node)}")
 
+    expression = expression.replace('^', '**').replace('×', '*').replace('÷', '/')
     parsed_expr = ast.parse(expression, mode='eval')
     result = eval_expr(parsed_expr.body)
     return str(result)
