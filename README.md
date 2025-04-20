@@ -2,6 +2,10 @@
 
 A Model Context Protocol server for calculating. This server enables LLMs to use calculator for precise numerical calculations.
 
+<a href="https://glama.ai/mcp/servers/@githejie/mcp-server-calculator">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@githejie/mcp-server-calculator/badge" alt="Calculator Server MCP server" />
+</a>
+
 ### Available Tools
 
 - `calculate` - Calculates/evaluates the given expression.
