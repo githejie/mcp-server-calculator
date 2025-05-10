@@ -1,3 +1,4 @@
+import math
 import unittest
 from src.mcp_server_calculator.calculator import evaluate
 
@@ -78,6 +79,21 @@ class TestCalculator(unittest.TestCase):
     def test_modulus_by_zero(self):
         with self.assertRaises(ZeroDivisionError):
             evaluate("1 % 0")
+
+    def test_math_functions(self):
+        self.assertAlmostEqual(float(evaluate("sin(pi/2)")), math.sin(math.pi/2), places=7)
+        self.assertAlmostEqual(float(evaluate("cos(0)")), math.cos(0), places=7)
+        self.assertAlmostEqual(float(evaluate("sqrt(16)")), math.sqrt(16), places=7)
+        self.assertAlmostEqual(float(evaluate("log(e)")), math.log(math.e), places=7)
+        self.assertAlmostEqual(float(evaluate("exp(1)")), math.exp(1), places=7)
+        self.assertAlmostEqual(float(evaluate("tan(0)")), math.tan(0), places=7)
+        self.assertAlmostEqual(float(evaluate("fabs(-5)")), math.fabs(-5), places=7)
+        self.assertAlmostEqual(float(evaluate("factorial(5)")), math.factorial(5), places=7)
+        self.assertAlmostEqual(float(evaluate("pow(2, 5)")), math.pow(2, 5), places=7)
+        self.assertAlmostEqual(float(evaluate("degrees(pi)")), math.degrees(math.pi), places=7)
+        self.assertAlmostEqual(float(evaluate("radians(180)")), math.radians(180), places=7)
+        self.assertAlmostEqual(float(evaluate("pi")), math.pi, places=7)
+        self.assertAlmostEqual(float(evaluate("e")), math.e, places=7)
 
 if __name__ == '__main__':
     unittest.main()
