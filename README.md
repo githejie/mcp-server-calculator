@@ -2,6 +2,8 @@
 
 A Model Context Protocol server for calculating. This server enables LLMs to use calculator for precise numerical calculations.
 
+[![MCPHub.com Badge](https://mcphub.com/api/mcp-servers/githejie/mcp-server-calculator/badge)](https://mcphub.com/mcp-servers/githejie/mcp-server-calculator)
+
 ### Available Tools
 
 - `calculate` - Calculates/evaluates the given expression.
