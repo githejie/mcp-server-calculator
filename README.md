@@ -1,4 +1,5 @@
 # Calculator MCP Server
+[![Trust Score](https://archestra.ai/mcp-catalog/api/badge/quality/githejie/mcp-server-calculator)](https://archestra.ai/mcp-catalog/githejie__mcp-server-calculator)
 
 A Model Context Protocol server for calculating. This server enables LLMs to use calculator for precise numerical calculations.
 
