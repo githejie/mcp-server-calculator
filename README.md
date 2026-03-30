@@ -32,6 +32,10 @@ After installation, you can run it as a script using:
 python -m mcp_server_calculator
 ```
 
+## Hosted deployment
+
+A hosted deployment is available on [Fronteir AI](https://fronteir.ai/mcp/githejie-mcp-server-calculator).
+
 ## Configuration
 
 ### Using uv (recommended)
