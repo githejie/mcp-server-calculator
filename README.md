@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/githejie-mcp-server-calculator-badge.png)](https://mseep.ai/app/githejie-mcp-server-calculator)
+
 # Calculator MCP Server
 
 A Model Context Protocol server for calculating. This server enables LLMs to use calculator for precise numerical calculations.
